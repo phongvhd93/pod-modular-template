@@ -1,0 +1,9 @@
+sources:
+  - ModularAppDemo/Sources
+templates:
+  - tools/sourcery/templates
+output:
+  ModularAppDemoTests/Sources/Mocks/Sourcery 
+args:
+  autoMockableTestableImports:
+    - ModularAppDemo

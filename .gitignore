@@ -84,3 +84,5 @@ dependencies/
 
 # Environment
 .env
+vendor
+pods

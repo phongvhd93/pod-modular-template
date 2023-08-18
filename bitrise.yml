@@ -55,10 +55,10 @@ workflows:
     envs:
     - opts:
         is_expand: false
-      BUNDLE_ID: {BUNDLE_ID_PRODUCTION}
+      BUNDLE_ID: phong.modularapp.demo
     - opts:
         is_expand: false
-      BITRISE_SCHEME: {PROJECT_NAME}
+      BITRISE_SCHEME: ModularAppDemo
   deploy_release_firebase:
     steps:
     - activate-ssh-key@4:
@@ -100,10 +100,10 @@ workflows:
     envs:
     - opts:
         is_expand: false
-      BUNDLE_ID: {BUNDLE_ID_PRODUCTION}
+      BUNDLE_ID: phong.modularapp.demo
     - opts:
         is_expand: false
-      BITRISE_SCHEME: {PROJECT_NAME}
+      BITRISE_SCHEME: ModularAppDemo
   deploy_staging:
     steps:
     - activate-ssh-key@4:
@@ -145,10 +145,10 @@ workflows:
     envs:
     - opts:
         is_expand: false
-      BUNDLE_ID: {BUNDLE_ID_STAGING}
+      BUNDLE_ID: phong.modularapp.demo.staging
     - opts:
         is_expand: false
-      BITRISE_SCHEME: {PROJECT_NAME} Staging
+      BITRISE_SCHEME: ModularAppDemo Staging
   test:
     steps:
     - activate-ssh-key@4:
@@ -183,15 +183,15 @@ workflows:
     envs:
     - opts:
         is_expand: false
-      BUNDLE_ID: {BUNDLE_ID_STAGING}
+      BUNDLE_ID: phong.modularapp.demo.staging
     - opts:
         is_expand: false
-      BITRISE_SCHEME: {PROJECT_NAME} Staging
+      BITRISE_SCHEME: ModularAppDemo Staging
 app:
   envs:
   - opts:
       is_expand: false
-    BITRISE_PROJECT_PATH: {PROJECT_NAME}.xcworkspace
+    BITRISE_PROJECT_PATH: ModularAppDemo.xcworkspace
   - opts:
       is_expand: false
     TEAM_ID: TEAMID
